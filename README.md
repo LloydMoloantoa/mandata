@@ -16,11 +16,15 @@ Here are some ideas to get you started:
 -->
 
 <!-- 
-mysql://b84aa3e74fa1dd:6644049e@us-cdbr-east-05.cleardb.net/heroku_f60c767c35f48c9?reconnect=true
+
+
+mysql://b670a078c2b8d4:4092e6d6@us-cdbr-east-05.cleardb.net/heroku_b0d34b4373ad166?reconnect=true
 
 Hostname: us-cdbr-east-05.cleardb.net
-Username: b84aa3e74fa1dd
-Password: 6644049e
+Username: b670a078c2b8d4
+Password: 4092e6d6
+
+
  -->
 
  

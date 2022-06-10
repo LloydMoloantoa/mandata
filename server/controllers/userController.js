@@ -32,11 +32,19 @@ var db_config = {
   /* host: 'us-cdbr-east-05.cleardb.net',
   user: 'b84aa3e74fa1dd',
   password: '6644049e',
-  database: 'heroku_f60c767c35f48c9' */
+  database: 'heroku_f60c767c35f48c9' 
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
-  database: process.env.DB_NAME
+  database: process.env.DB_NAME*/
+
+
+  host: 'us-cdbr-east-05.cleardb.net',
+  user: 'b670a078c2b8d4',
+  password: '4092e6d6',
+  database: 'heroku_b0d34b4373ad166' 
+
+
 };
 
 var connection;
