@@ -1,0 +1,26 @@
+### Hi there 👋
+
+<!--
+**LloydMoloantoa/lloydmoloantoa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+
+<!-- 
+mysql://b84aa3e74fa1dd:6644049e@us-cdbr-east-05.cleardb.net/heroku_f60c767c35f48c9?reconnect=true
+
+Hostname: us-cdbr-east-05.cleardb.net
+Username: b84aa3e74fa1dd
+Password: 6644049e
+ -->
+
+ 

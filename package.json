@@ -1,0 +1,28 @@
+{
+  "name": "lloydmoloantoa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "userController.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon userController.js",
+    "start:dev": "nodemon userController.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.2.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.2",
+    "fileupload": "^0.2.1",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="/css/grid.css">
+<link rel="stylesheet" href="/css/section1.css" />
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/grid">Mandata Information system</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+    </div>
+  </div>
+
+  {{!-- <form class="d-flex" method="POST" action="/userreg" novalidate>
+    <button class="btn btn-primary align-self-center" type="submit">Register</button>
+  </form> --}}
+
+  <form class="d-flex" method="POST" action="/log" novalidate>
+    <button class="btn btn-primary align-self-center" type="submit">Login</button>
+  </form>
+</nav>
+
+<div class="container">
+  <!-- Section 1 -->
+  <section class="section-1 center" id="section-1">
+    <h3 class="person-name">Welcome to Mandata Information system</h3>
+    <img src="/img/lloyd-moloantoa.jpg" alt="Lloyd Moloantoa" class="person-img" />
+    <h3 class="person-name">View Eployees</h3>
+  </section>
+  <!-- End of Section 1 -->
+</div>
+
+<div class="container">
+  <div class="row">
+    {{#each rows}}
+    <div class="col-4">
+      <div class="card">
+        {{#if this.picture}}
+        <img class="card__image" src="data:image/png;base64,{{this.picture}}" loading="lazy" alt="Embedded Image">
+        {{else}}
+        <img class="card__image" src="/img/default.jpg" loading="lazy" alt="User Profile">
+        {{/if}}
+
+        <h1 class="card__title">{{this.name}}</h1>
+        {{!-- <div class="card__job">R {{this.price}}</div>--}}
+        <p class="card__about">
+          {{this.email}}
+        </p>
+        <div class="row">
+          <a href="/viewprod/{{this.id}}" type="button" class="btn btn-primary">More</a>
+          {{!-- <a href="/viewprod/{{this.id}}" type="button" class="btn btn-primary">Buy</a> --}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+<!-- contact me -->
+<section class="section-4" id="section-4">
+  <p class="section-heading section-4-heading">Send Complaints</p>
+  <form class="contact-form center" method="POST" action="/message">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <textarea type="text" name="message" placeholder="Message" required></textarea>
+    <button class="contact-form-btn" type="submit">Submit</button>
+  </form>
+</section>
+<!-- End of contact me 5 -->
+
+<!-- chatbot -->
+<link rel="stylesheet" href="/css/chat.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CHAT BAR BLOCK -->
+<div class="chat-bar-collapsible">
+  <button id="chat-button" type="button" class="collapsible">Chat with us!
+    <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+  </button>
+
+  <div class="content">
+    <div class="full-chat-block">
+      <!-- Message Container -->
+      <div class="outer-container">
+        <div class="chat-container">
+          <!-- Messages -->
+          <div id="chatbox">
+            <h5 id="chat-timestamp"></h5>
+            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+          </div>
+
+          <!-- User input box -->
+          <div class="chat-bar-input-block">
+            <div id="userInput">
+              <input id="textInput" class="input-box" type="text" name="msg"
+                placeholder="Tap 'Enter' to send a message">
+              <p></p>
+            </div>
+
+            <div class="chat-bar-icons">
+              <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+              <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+            </div>
+          </div>
+
+          <div id="chat-bar-bottom">
+            <p></p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End of chatbot-->
+
+
+<!-- footer -->
+<footer class="section-5 center">
+</footer>
+<!-- End of footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/responses.js"></script>
+<script src="/js/chat.js"></script>
